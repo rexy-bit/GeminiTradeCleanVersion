@@ -88,7 +88,7 @@ Output format (must be complete valid JSON):
           ],
           generationConfig: {
             temperature: 0.7,
-            maxOutputTokens: 2048, // Increased from 1000 to 2048
+            maxOutputTokens: 2048, 
           },
         }),
       }
@@ -103,7 +103,6 @@ Output format (must be complete valid JSON):
     const data = await response.json();
     console.log("Full API Response:", data);
     
-    // Check if response was incomplete
     const finishReason = data?.candidates?.[0]?.finishReason;
     if (finishReason === "MAX_TOKENS") {
       console.warn("⚠️ Response was truncated due to token limit");
@@ -117,13 +116,12 @@ Output format (must be complete valid JSON):
 
     console.log("Raw AI Text:", rawText);
 
-    // Clean up JSON from markdown code blocks
     let jsonText = rawText
       .replace(/```json\s*/g, "")
       .replace(/```\s*/g, "")
       .trim();
 
-    // Extract JSON if wrapped in other text
+
     const firstBrace = jsonText.indexOf('{');
     const lastBrace = jsonText.lastIndexOf('}');
     
@@ -141,7 +139,6 @@ Output format (must be complete valid JSON):
       console.error("Raw text:", rawText);
       console.error("Extracted JSON:", jsonText);
       
-      // If still incomplete, throw helpful error
       throw new Error("AI response was incomplete or invalid JSON. Try with shorter input or increase token limit.");
     }
 

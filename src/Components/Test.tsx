@@ -148,9 +148,10 @@ const Test = () => {
                  
               </form>
 
+           <div id="response">
               {!loadingAi && aiResponse.status && (
 
-                <div className="bg-[#0F172A] flex flex-col w-[900px] max-[1000px]:w-[700px] max-[800px]:w-[600px] max-[700px]:w-[400px] max-[500px]:w-[320px] p-5 border-[#1E2A47] border-5 rounded-[10px] mb-15" id="response">
+                <div className="bg-[#0F172A] flex flex-col w-[900px] max-[1000px]:w-[700px] max-[800px]:w-[600px] max-[700px]:w-[400px] max-[500px]:w-[320px] p-5 border-[#1E2A47] border-5 rounded-[10px] mb-15" >
 
                     <h1 className="text-[1.5em] text-gray-100 font-bold text-center underline">Gemini Response</h1>
 
@@ -191,6 +192,7 @@ const Test = () => {
                     
                 </div>
               )}
+              </div>
 
                
         </section>

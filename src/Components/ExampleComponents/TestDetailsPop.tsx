@@ -18,7 +18,8 @@ const TestDetailsPop = ({test, setShowPop} :  {test: userInput, setShowPop : (b 
         await getAiResponse(test);
 
         setShowPop(false);
-        document.getElementById("test")?.scrollIntoView({ behavior: "smooth" });
+
+        document.getElementById("response")?.scrollIntoView({ behavior: "smooth" });
         
     }
     
