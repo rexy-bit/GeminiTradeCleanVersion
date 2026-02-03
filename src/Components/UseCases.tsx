@@ -35,7 +35,7 @@ const UseCases = () => {
     ]
 
     return(
-        <section className="flex flex-col justify-center items-center bg-[#0B1220]" id="cases">
+        <section className="flex flex-col justify-center items-center bg-[#0B1220]" id="case">
             <h1 className="text-[2em] text-center font-bold text-gray-100 mt-20">Use Cases (Business Impact)</h1>
              <h2 className="text-[1.2em] text-gray-200 text-center mt-5 font-[600]">Real-world use cases for AI-powered import compliance</h2>
              <h3 className="text-[1.1em] text-gray-300 mt-5 text-center font-[600]">Gemini-Trade helps businesses and institutions make faster, safer import decisions using AI.</h3>

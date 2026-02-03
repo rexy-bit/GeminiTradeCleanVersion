@@ -64,7 +64,7 @@ const Examples = () => {
 
 
     return(
-        <section className="flex flex-col w-full bg-[#0B1220] p-15">
+        <section className="flex flex-col w-full bg-[#0B1220] p-15" id="example">
            <h1 className="text-gray-100 text-[2em] font-bold mt-5">Real Import Analysis Examples</h1>
            <h2 className="text-[1.2em] text-gray-200 text-[17px] font-[600] mt-5">Pre-analyzed products using Gemini AI — and ready-to-use test cases for you</h2>
 

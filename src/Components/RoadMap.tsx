@@ -30,11 +30,11 @@ const RoadMap = () => {
 ];
 
     return(
-        <section className="flex flex-col justify-center items-center bg-[#0B1220]">
+        <section className="flex flex-col justify-center items-center bg-[#0B1220]" id="roadmap">
 
             <h1 className="text-[2em] text-center font-bold text-gray-100 mt-20">Roadmap & Future Improvements</h1>
 
-            <div className="flex flex-col justify-center items-center mt-10 w-[600px] gap-5">
+            <div className="flex flex-col justify-center items-center mt-10 w-[600px] gap-5 max-[700px]:w-[300px]">
                 <p className="text-[17px] font-[600] text-gray-100 text-center">
                     Gemini-Trade has the potential to become a full-fledged SaaS startup, providing AI-powered import compliance assistance for authorities. Customs officers face stressful and complex decisions when assessing sensitive materials, and Gemini-Trade can help reduce errors and speed up the process. 
                 </p>

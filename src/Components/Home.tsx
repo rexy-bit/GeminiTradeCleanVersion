@@ -4,7 +4,7 @@ import { memo } from "react"
 const Home = () => {
 
     return(
-         <section className="flex flex-col w-full justify-center p-10 py-20 bg-gradient-to-b from-[#1E2A47] gap-5 to-[#0B1220]">
+         <section className="flex flex-col w-full justify-center p-10 py-20 bg-gradient-to-b from-[#1E2A47] gap-5 to-[#0B1220]" id="hero">
 
               <h1 className="text-[2em] text-white font-[poppins] font-bold max-[500px]:text-[1.7em]">Powered by Gemini 3</h1>
               <h2 className="text-[1.3em] font-bold text-gray-200 font-sans">AI-Powered Import Compliance Analysis</h2>
